@@ -21,13 +21,12 @@ def user_input_features():
 
     return input_dict
 
-
 input_dict = user_input_features()
 
 if st.button('Predict'):
     response = requests.post(
-        url="http://localhost:8000/predict",
-        #url="http://nyc-taxi-model-container:8000/predict",
+        #url="http://localhost:8000/predict",
+        url="http://nyc-taxi-model-container:8000/predict",
         data=json.dumps(input_dict)
     )
 

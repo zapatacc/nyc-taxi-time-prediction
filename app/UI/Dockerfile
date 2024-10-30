@@ -12,4 +12,4 @@ COPY ./main.py /code/
 
 EXPOSE 8501
 
-CMD ["streamlit","run", "main.py"]
+CMD ["streamlit", "run", "main.py"]
